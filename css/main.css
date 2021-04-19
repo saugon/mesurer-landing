@@ -29,4 +29,26 @@ body {
   opacity: 0.2;
 }
 
+header {
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+header.scroll-hide {
+  transform: translateY(-100%);
+}
+
+#menu {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+#menu.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
 /*# sourceMappingURL=main.css.map */

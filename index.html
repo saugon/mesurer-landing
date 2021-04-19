@@ -29,8 +29,26 @@
 <body class="font-light overflow-x-hidden">
   <header class="fixed top-0 left-0 w-screen z-50 bg-white">
     <nav class="grid grid-cols-3 border-b border-gray-200 items-center">
-      <div class="justify-self-start lg:p-8 p-6 border-r border-gray-200">
-        <img src="images/menu.svg" alt="Menu" class="w-7 h-auto">
+      <div class="justify-self-start border-r border-gray-200">
+        <div id="menu-trigger" class="lg:p-8 p-6">
+          <img src="images/menu.svg" alt="Menu" class="w-7 h-auto">
+        </div>
+        <div id="menu" class="pointer-events-none fixed top-0 left-0 h-screen w-screen z-100 bg-main-color">
+          <img id="close-menu" src="images/x.svg" alt="Menu" class="w-7 h-auto absolute right-5 top-5">
+          <div class="flex flex-col justify-between h-full px-10 pt-24 pb-10 text-3xl text-white">
+            <div class="links flex flex-col">
+              <a href="#about-section" class="mb-8">Rural Mesurer</a>
+              <a href="#products-section" class="mb-8">Productos</a>
+              <a href="#team-section">Equipo</a>
+            </div>
+            <ul class="mt-10 text-lg leading-relaxed">
+              <li class="font-semibold">Oficina Buenos Aires</li>
+              <li>Calle 1234, Buenos Aires, Argntina</li>
+              <li>(+54 11) 1234 5678</li>
+              <li>info@ruralmesurer.com</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <img src="images/logo.svg" alt="Rural Mesurer" class="w-20 lg:w-24 h-auto justify-self-center">
       <div class="justify-self-end lg:py-8 lg:px-12 hidden lg:flex border-l border-gray-200 h-full items-center">
@@ -63,14 +81,14 @@
       </div>
     </div>
   </section>
-  <section class="lg:py-32 py-20 bg-gray-light">
+  <section id="about-section" class="lg:py-32 py-20 bg-gray-light">
     <div
       class="container mx-auto xl:text-3xl xl:leading-normal xl:max-w-3xl text-xl px-5 max-w-2xl font-thin leading-normal text-center">
       Rural Mesurer se encarga de la sensorización de la calidad y condiciones del aire para la producción pecuaria a
       través de microcomputadoras.
     </div>
   </section>
-  <section class="relative lg:py-28 py-20">
+  <section id="products-section" class="relative lg:py-28 py-20">
     <div class=" container mx-auto">
       <img src="images/signal.svg" alt="" class="w-6/12 h-auto absolute left-0 top-0 opacity-70">
       <div class="flex justify-center">
@@ -145,7 +163,7 @@
       </div>
     </div>
   </section>
-  <section class="lg:py-32 py-20 bg-gray-light">
+  <section id="team-section" class="lg:py-32 py-20 bg-gray-light">
     <div class="container mx-auto">
       <div class="flex justify-center">
         <div class="text-lg border-b border-gray-500">
@@ -206,9 +224,9 @@
       </div>
       <div class="mt-10 lg:mt-0 lg:justify-self-end justify-self-start">
         <div class="flex">
-          <a href="#about" class="mr-8">Rural Mesurer</a>
-          <a href="#products" class="mr-8">Productos</a>
-          <a href="#team">Equipo</a>
+          <a href="#about-section" class="mr-8">Rural Mesurer</a>
+          <a href="#products-section" class="mr-8">Productos</a>
+          <a href="#team-section">Equipo</a>
         </div>
         <ul class="mt-10 lg:text-right leading-relaxed">
           <li class="font-semibold">Oficina Buenos Aires</li>
