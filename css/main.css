@@ -46,7 +46,11 @@ header.scroll-hide {
   -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
-#menu.show {
+
+html.show-menu {
+  overflow-y: hidden;
+}
+html.show-menu #menu {
   opacity: 1;
   pointer-events: all;
 }

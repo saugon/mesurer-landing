@@ -25,18 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const menuTrigger = document.getElementById("menu-trigger");
   menuTrigger.addEventListener("click", () => {
-    document.getElementById("menu").classList.add("show");
+    document.documentElement.classList.add("show-menu");
   });
 
   const closeMenu = document.getElementById("close-menu");
   closeMenu.addEventListener("click", () => {
-    document.getElementById("menu").classList.remove("show");
+    document.documentElement.classList.remove("show-menu");
   });
 
   const menuLinks = document.querySelectorAll("#menu .links a");
   menuLinks.forEach((elem) => {
     elem.addEventListener("click", () => {
-      document.getElementById("menu").classList.remove("show");
+      document.documentElement.classList.remove("show-menu");
       setTimeout(() => {
         document.getElementsByTagName("header")[0].classList.add("scroll-hide");
       }, 100);

@@ -30,15 +30,17 @@
   <header class="fixed top-0 left-0 w-screen z-50 bg-white">
     <nav class="grid grid-cols-3 border-b border-gray-200 items-center">
       <div class="justify-self-start border-r border-gray-200">
-        <div id="menu-trigger" class="lg:p-8 p-6">
-          <img src="images/menu.svg" alt="Menu" class="w-7 h-auto">
+        <div id="menu-trigger" class="lg:p-8 p-6 cursor-pointer">
+          <img src=" images/menu.svg" alt="Menu" class="w-7 h-auto">
         </div>
         <div id="menu" class="pointer-events-none fixed top-0 left-0 h-screen w-screen z-100 bg-main-color">
-          <img id="close-menu" src="images/x.svg" alt="Menu" class="w-7 h-auto absolute right-5 top-5">
-          <div class="flex flex-col justify-between h-full px-10 pt-24 pb-10 text-3xl text-white">
+          <img id="close-menu" src="images/x.svg" alt="Menu"
+            class="w-7 lg:w-10 h-auto absolute right-5 lg:right-10 top-5 lg:top-10 cursor-pointer">
+          <div
+            class="flex flex-col justify-between lg:items-center lg:text-center h-full px-10 pt-24 pb-10 lg:p-32 text-3xl lg:text-7xl text-white">
             <div class="links flex flex-col">
-              <a href="#about-section" class="mb-8">Rural Mesurer</a>
-              <a href="#products-section" class="mb-8">Productos</a>
+              <a href="#about-section" class="mb-8 lg:mb-16">Rural Mesurer</a>
+              <a href="#products-section" class="mb-8 lg:mb-16">Productos</a>
               <a href="#team-section">Equipo</a>
             </div>
             <ul class="mt-10 text-lg leading-relaxed">
@@ -51,7 +53,8 @@
         </div>
       </div>
       <img src="images/logo.svg" alt="Rural Mesurer" class="w-20 lg:w-24 h-auto justify-self-center">
-      <div class="justify-self-end lg:py-8 lg:px-12 hidden lg:flex border-l border-gray-200 h-full items-center">
+      <div
+        class="justify-self-end lg:py-8 lg:px-12 hidden lg:flex border-l border-gray-200 h-full items-center opacity-0">
         Ingresar
       </div>
     </nav>
@@ -62,13 +65,11 @@
     <div
       class="relative z-10 lg:grid lg:grid-cols-2 lg:grid-rows-1 flex flex-col-reverse self-center items-center mt-5 lg:mt-5">
       <div class="carousel-text justify-self-end mt-5 lg:mt-0 px-5 lg:pl-32 lg:pr-20 xl:max-w-3xl lg:max-w-2xl">
-        <h1 class="text-2xl xl:text-5xl lg:text-carousel xl:leading-tight font-thin">Sensorización de la
-          calidad para tu
-          campo
-        </h1>
+        <h1 class="text-2xl xl:text-5xl lg:text-carousel xl:leading-tight font-thin">Telemetría permanente para tu campo
+          y producción</h1>
         <p class="xl:mt-8 mt-3 lg:mt-5 mb-9 xl:text-xl xl:leading-relaxed lg:text-lg font-light">
-          Mesurer se encarga de la sensorización de la calidad y condiciones del aire para la producción pecuaria a
-          través de microcomputadoras.
+          Rural Mesurer asiste al productor agrícola ganadero en la toma de decisiones mediante el sensado de variables
+          de valor para mejorar procesos y prevenir incidentes.
         </p>
         <button class="flex items-center text-lg font-light">
           Más info
@@ -83,9 +84,10 @@
   </section>
   <section id="about-section" class="lg:py-32 py-20 bg-gray-light">
     <div
-      class="container mx-auto xl:text-3xl xl:leading-normal xl:max-w-3xl text-xl px-5 max-w-2xl font-thin leading-normal text-center">
-      Rural Mesurer se encarga de la sensorización de la calidad y condiciones del aire para la producción pecuaria a
-      través de microcomputadoras.
+      class="container mx-auto xl:text-3xl xl:leading-normal xl:max-w-4xl text-xl px-5 max-w-2xl font-thin leading-normal text-center">
+      En el mundo de hoy todas las instalaciones edilicias cuentan con algún tipo de sensorización de humos o gases a
+      efectos de prevenir incidentes de costos altísimos. Mediante el uso de tecnología IoT y de sensores de diferentes
+      tipos podemos monitorear las diversas instancias de la producción rural para generar mejoras sutanciales.
     </div>
   </section>
   <section id="products-section" class="relative lg:py-28 py-20">
@@ -105,9 +107,10 @@
           <div class="lg:mt-5 mt-3 pr-5">
             <h2 class="text-2xl lg:text-3xl">Pivot Tracker</h2>
             <p class="lg:text-lg font-light mt-4">
-              Mesurer se encarga de la sensorización de la calidad
-              y condiciones del aire para la producción pecuaria a
-              través de microcomputadoras.
+              Mesurer Pivot Tracker ayuda a los productores de papa, maíz, arroz y otros cultivos que usan equipos de
+              pivot, a aumentar la productividad evitando problemas de riego y haciendo más eficiente el rinde.<br />
+              Con Mesurer Pivot Tracker se simplifica la tarea de control que se hace manualmente al visitar el campo,
+              reduciendo tiempos para acelerar respuestas.
             </p>
           </div>
           <img class="mt-5 lg:mt-0 h-56 w-full object-cover rounded-lg rounded-br-mesurer"
@@ -121,9 +124,9 @@
           <div class="lg:mt-5 mt-3 pr-5">
             <h2 class="text-2xl lg:text-3xl">Jabalina Meteorológica</h2>
             <p class="lg:text-lg font-light mt-4">
-              Mesurer se encarga de la sensorización de la calidad
-              y condiciones del aire para la producción pecuaria a
-              través de microcomputadoras.
+              La Jabalina Meteorológica Mesurer se encarga de la medición de las condiciones del suelo y de las
+              variables atmosféricas en la producción agrícola, a fin de disminuir el uso de agua en el riego y aumentar
+              la productividad de su campo.
             </p>
           </div>
           <img class="mt-5 lg:mt-0 h-56 w-full object-cover rounded-lg rounded-br-mesurer"
@@ -137,28 +140,28 @@
           <div class="lg:mt-5 mt-3 pr-5">
             <h2 class="text-2xl lg:text-3xl">GasControl</h2>
             <p class="lg:text-lg font-light mt-4">
-              Mesurer se encarga de la sensorización de la calidad
-              y condiciones del aire para la producción pecuaria a
-              través de microcomputadoras.
+              GasControl Mesurer trabaja en la sensorización de calidad y condiciones del aire -amoníaco, oxígeno y CO2-
+              para la producción pecuaria. Genera alertas en casos de potenciales siniestros y analiza los datos para
+              formular modelos predictivos.
             </p>
           </div>
           <img class="mt-5 lg:mt-0 h-56 w-full object-cover rounded-lg rounded-br-mesurer"
-            src="images/products/mesurair.jpg">
+            src="images/products/gascontrol.jpg">
         </div>
         <div class="lg:grid lg:grid-cols-product lg:gap-6 flex flex-col items-start mx-5 lg:mx-0">
           <div class="lg:mt-5 border-b border-gray-500 text-sm">
             04.
           </div>
           <div class="lg:mt-5 mt-3 pr-5">
-            <h2 class="text-2xl lg:text-3xl">Spot Tracker</h2>
+            <h2 class="text-2xl lg:text-3xl">LiveStock Tracker</h2>
             <p class="lg:text-lg font-light mt-4">
-              Mesurer se encarga de la sensorización de la calidad
-              y condiciones del aire para la producción pecuaria a
-              través de microcomputadoras.
+              LiveStock Tracker Mesurer es la tecnología que permite dar seguimiento en tiempo real al ganado. Mediante
+              el análisis de datos podemos determinar factores como el comportamiento alimentario y la determinación de
+              dominantes además de controlar y contar stock.
             </p>
           </div>
           <img class="mt-5 lg:mt-0 h-56 w-full object-cover rounded-lg rounded-br-mesurer"
-            src="images/products/spot-tracker.jpg">
+            src="images/products/livestock-tracker.jpg">
         </div>
       </div>
     </div>
@@ -215,7 +218,7 @@
     <div class="flex flex-col lg:grid lg:grid-cols-2 px-5 lg:px-0">
       <div class="border-b border-gray-200 pb-10 lg:border-b-0 lg:pb-0">
         <div class="pr-10 font-light leading-normal text-xl lg:text-2xl mb-5 lg:mb-10">
-          Integrá nuestros productos y mejorá la producción y rentabilidad de tu campo.
+          Integrá nuestros productos, mejorá la producción y aumentá la rentabilidad de tu campo.
         </div>
         <a href="#" class="inline-flex bg-main-color text-white pl-7 pr-10 py-4 rounded-lg rounded-br-button">
           Envianos un mensaje
