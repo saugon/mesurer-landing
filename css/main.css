@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;600&display=swap");
 :root {
   --main-color: #2aae6f;
+  --main-color-hover: #2ebd78;
 }
 
 body {
   font-family: "Heebo", sans-serif;
   color: #333;
+}
+
+body.loaded header {
+  transition: all 0.5s ease-out;
+  transform: translateY(0);
+  opacity: 1;
+}
+body.loaded #main {
+  transition: all 1s ease-out 0.4s;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .bg-lines {
@@ -53,6 +65,16 @@ html.show-menu {
 html.show-menu #menu {
   opacity: 1;
   pointer-events: all;
+}
+
+.fade-up {
+  opacity: 0 !important;
+  transform: translateY(3rem);
+  transition: all 0.8s ease-out, opacity 0.2s ease-out;
+}
+.fade-up.show {
+  opacity: 1 !important;
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=main.css.map */

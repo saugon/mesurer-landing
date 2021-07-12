@@ -27,7 +27,7 @@
 </head>
 
 <body class="font-light overflow-x-hidden">
-  <header class="fixed top-0 left-0 w-screen z-50 bg-white">
+  <header class="fixed top-0 left-0 w-screen z-50 bg-white opacity-0 transform -translate-y-4">
     <nav class="grid grid-cols-3 border-b border-gray-200 items-center">
       <div class="justify-self-start border-r border-gray-200">
         <div id="menu-trigger" class="lg:p-8 p-6 cursor-pointer">
@@ -48,6 +48,18 @@
               <li>Calle 1234, Buenos Aires, Argntina</li>
               <li>(+54 11) 1234 5678</li>
               <li>info@ruralmesurer.com</li>
+              <li>
+                <div class="mt-5 flex justify-center">
+                  <a href="https://twitter.com/mesurerinfo" target="_blank">
+                    <img src="images/twitter-w.svg" alt="Twitter Rural Mesurer"
+                      class="w-9 h-auto transition duration-300 ease-in-out transform hover:-translate-y-1">
+                  </a>
+                  <a href="https://www.instagram.com/mesurer.info/" target="_blank"
+                    class="w-9 h-auto ml-4 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <img src="images/instagram-w.svg" alt="Instagram Rural Mesurer">
+                  </a>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -59,7 +71,7 @@
       </div>
     </nav>
   </header>
-  <section id="main" class="min-h-screen flex items-center">
+  <section id="main" class="min-h-screen flex items-center opacity-0 transform translate-y-4">
     <img src="images/bg.svg" alt=""
       class="absolute left-0 top-0 w-full h-full opacity-40 object-cover object-center pt-24">
     <div
@@ -84,7 +96,7 @@
   </section>
   <section id="about-section" class="lg:py-32 py-20 bg-gray-light">
     <div
-      class="container mx-auto xl:text-3xl xl:leading-normal xl:max-w-4xl text-xl px-5 max-w-2xl font-thin leading-normal text-center">
+      class="container mx-auto xl:text-3xl xl:leading-normal xl:max-w-4xl text-xl px-5 max-w-2xl font-thin leading-normal text-center fade-up">
       En el mundo de hoy todas las instalaciones edilicias cuentan con algún tipo de sensorización de humos o gases a
       efectos de prevenir incidentes de costos altísimos. Mediante el uso de tecnología IoT y de sensores de diferentes
       tipos podemos monitorear las diversas instancias de la producción rural para generar mejoras sutanciales.
@@ -100,7 +112,7 @@
       </div>
       <div class="flex flex-col lg:mt-24 mt-16">
         <div
-          class="lg:grid lg:grid-cols-product lg:gap-6 flex flex-col items-start pb-14 lg:pb-16 mb-12 lg:mb-16 border-b border-gray-200 mx-5 lg:mx-0">
+          class="lg:grid lg:grid-cols-product lg:gap-6 flex flex-col items-start pb-14 lg:pb-16 mb-12 lg:mb-16 border-b border-gray-200 mx-5 lg:mx-0 fade-up">
           <div class="lg:mt-5 border-b border-gray-500 text-sm">
             01.
           </div>
@@ -111,12 +123,17 @@
               equipos de pivot, a aumentar la productividad evitando problemas de riego y haciendo más eficiente el
               rinde.
             </p>
+            <a href="files/presentation_pivot_tracker.pdf" target="_blank"
+              class="inline-flex bg-main-color text-white mt-5 pl-7 pr-10 py-4 rounded-lg rounded-br-button transition duration-300 ease-in-out hover:bg-main-color-hover">
+              Descargar brochure
+              <img src="images/download.svg" alt="" class="w-5 ml-5">
+            </a>
           </div>
           <img class="mt-5 lg:mt-0 h-56 w-full object-cover rounded-lg rounded-br-mesurer"
             src="images/products/pivot-tracker.jpg">
         </div>
         <div
-          class="lg:grid lg:grid-cols-product lg:gap-6 flex flex-col items-start pb-14 lg:pb-16 mb-12 lg:mb-16 border-b border-gray-200 mx-5 lg:mx-0">
+          class="lg:grid lg:grid-cols-product lg:gap-6 flex flex-col items-start pb-14 lg:pb-16 mb-12 lg:mb-16 border-b border-gray-200 mx-5 lg:mx-0 fade-up">
           <div class="lg:mt-5 border-b border-gray-500 text-sm">
             02.
           </div>
@@ -132,7 +149,7 @@
             src="images/products/jabalina.jpg">
         </div>
         <div
-          class="lg:grid lg:grid-cols-product lg:gap-6 flex flex-col items-start pb-14 lg:pb-16 mb-12 lg:mb-16 border-b border-gray-200 mx-5 lg:mx-0">
+          class="lg:grid lg:grid-cols-product lg:gap-6 flex flex-col items-start pb-14 lg:pb-16 mb-12 lg:mb-16 border-b border-gray-200 mx-5 lg:mx-0 fade-up">
           <div class="lg:mt-5 border-b border-gray-500 text-sm">
             03.
           </div>
@@ -143,11 +160,16 @@
               para la producción pecuaria. Genera alertas en casos de potenciales siniestros y analiza los datos para
               formular modelos predictivos.
             </p>
+            <a href="files/presentacion_gascontrol.pdf" target="_blank"
+              class="group inline-flex bg-main-color text-white mt-5 pl-7 pr-10 py-4 rounded-lg rounded-br-button transition duration-300 ease-in-out hover:bg-main-color-hover">
+              Descargar brochure
+              <img src="images/download.svg" alt="" class="w-5 ml-5">
+            </a>
           </div>
           <img class="mt-5 lg:mt-0 h-56 w-full object-cover rounded-lg rounded-br-mesurer"
             src="images/products/gascontrol.jpg">
         </div>
-        <div class="lg:grid lg:grid-cols-product lg:gap-6 flex flex-col items-start mx-5 lg:mx-0">
+        <div class="lg:grid lg:grid-cols-product lg:gap-6 flex flex-col items-start mx-5 lg:mx-0 fade-up">
           <div class="lg:mt-5 border-b border-gray-500 text-sm">
             04.
           </div>
@@ -172,42 +194,12 @@
           Nuestro equipo
         </div>
       </div>
-      <div id="team" class="glide lg:mt-24 mt-16">
-        <div class="flex items-start px-5 lg:px-0">
-          <div class="lg:inline hidden text-sm border-b border-gray-400 pr-14 mr-5">
-            scroll
-          </div>
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <img src="images/team/team-1.jpg" alt="" class="rounded-lg leading-tight">
-                <div class="ml-1">
-                  <div class="font-medium mt-3 text-sm lg:text-base">Carlos Mundstock</div>
-                  <div class="font-light lg:text-sm text-xs">Fundador & Electrónico</div>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <img src="images/team/team-2.jpg" alt="" class="rounded-lg leading-tight">
-                <div class="ml-1">
-                  <div class="font-medium mt-3 text-sm lg:text-base">Daniel Nuñez</div>
-                  <div class="font-light lg:text-sm text-xs">Fundador & Informático</div>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <img src="images/team/team-3.jpg" alt="" class="rounded-lg leading-tight">
-                <div class="ml-1">
-                  <div class="font-medium mt-3 text-sm lg:text-base">Jorge Masana</div>
-                  <div class="font-light lg:text-sm text-xs">Data Scientist</div>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <img src="images/team/team-4.jpg" alt="" class="rounded-lg leading-tight">
-                <div class="ml-1">
-                  <div class="font-medium mt-3 text-sm lg:text-base">Marcos Rabinovich</div>
-                  <div class="font-light lg:text-sm text-xs">Software Engineer</div>
-                </div>
-              </li>
-            </ul>
+      <div id="team" class="lg:mt-24 mt-16">
+        <div class="flex flex-col items-center px-5 lg:px-0">
+          <img src="images/team.jpg" alt="Equipo de Mesurer"
+            class="rounded-lg lg:rounded-2xl rounded-br-mesurer lg:rounded-br-carousel-mesurer">
+          <div class="mt-5 text-center">
+            <strong>Los fundadores de Mesurer:</strong> Eduardo Veralli, Pablo Deymonnaz y Federico Carrone.
           </div>
         </div>
       </div>
@@ -219,27 +211,37 @@
         <div class="pr-10 font-light leading-normal text-xl lg:text-2xl mb-5 lg:mb-10">
           Integrá nuestros productos, mejorá la producción y aumentá la rentabilidad de tu campo.
         </div>
-        <a href="#" class="inline-flex bg-main-color text-white pl-7 pr-10 py-4 rounded-lg rounded-br-button">
+        <a href="mailto:info@ruralmesurer.com"
+          class="inline-flex bg-main-color text-white pl-7 pr-10 py-4 rounded-lg rounded-br-button transition duration-300 ease-in-out hover:bg-main-color-hover">
           Envianos un mensaje
           <img src="images/arrow-right.svg" alt="" class="ml-5">
         </a>
       </div>
       <div class="mt-10 lg:mt-0 lg:justify-self-end justify-self-start">
-        <div class="flex">
-          <a href="#about-section" class="mr-8">Rural Mesurer</a>
-          <a href="#products-section" class="mr-8">Productos</a>
-          <a href="#team-section">Equipo</a>
+        <div class="flex justify-end">
+          <a href="#about-section" class="mr-8 lg:mr-0">Rural Mesurer</a>
+          <a href="#products-section" class="mr-8 lg:mr-0 lg:ml-8">Productos</a>
+          <a href="#team-section" class="lg:ml-8">Equipo</a>
         </div>
         <ul class="mt-10 lg:text-right leading-relaxed">
-          <li class="font-semibold">Oficina Buenos Aires</li>
+          <li class="font-medium">Oficina Buenos Aires</li>
           <li>Av. Belgrano 427, 4to piso, CABA Buenos Aires, Argentina</li>
           <li>(+54 9 11) 5875 4970</li>
           <li>info@ruralmesurer.com</li>
         </ul>
+        <div class="mt-5 flex justify-end">
+          <a href="https://twitter.com/mesurerinfo" target="_blank">
+            <img src="images/twitter.svg" alt="Twitter Rural Mesurer"
+              class="w-7 h-auto transition duration-300 ease-in-out transform hover:-translate-y-1">
+          </a>
+          <a href="https://www.instagram.com/mesurer.info/" target="_blank"
+            class="w-7 h-auto ml-4 transition duration-300 ease-in-out transform hover:-translate-y-1">
+            <img src="images/instagram.svg" alt="Instagram Rural Mesurer">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
-  <script src="js/glide.js"></script>
   <script src="js/main.js"></script>
 </body>
 

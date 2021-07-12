@@ -1,18 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
   let scrollPos = -10000;
+  document.body.className += " loaded";
 
-  new Glide("#team", {
-    type: "carousel",
-    perView: 3,
-    peek: { before: 0, after: 150 },
-    breakpoints: {
-      500: {
-        perView: 2,
-        peek: { before: 0, after: 100 },
-        gap: 20,
+  const team = document.querySelector("#team.glide");
+  if (team) {
+    new Glide(team, {
+      type: "carousel",
+      perView: 3,
+      peek: { before: 0, after: 150 },
+      breakpoints: {
+        500: {
+          perView: 2,
+          peek: { before: 0, after: 100 },
+          gap: 20,
+        },
       },
-    },
-  }).mount();
+    }).mount();
+  }
 
   window.addEventListener("scroll", function () {
     if (document.body.getBoundingClientRect().top < scrollPos && document.body.getBoundingClientRect().top < -30) {
@@ -41,5 +45,22 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementsByTagName("header")[0].classList.add("scroll-hide");
       }, 100);
     });
+  });
+
+  const fadeUpAnim = document.querySelectorAll(".fade-up");
+  const config = {
+    rootMargin: "-100px",
+  };
+  observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, config);
+
+  fadeUpAnim.forEach((elem) => {
+    observer.observe(elem);
   });
 });
